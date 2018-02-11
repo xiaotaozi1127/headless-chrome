@@ -14,7 +14,8 @@ var parseUrl = function(url) {
 };
 
 app.get('/', function(req, res) {
-    var urlToScreenshot = parseUrl(req.query.url);
+    // var urlToScreenshot = parseUrl(req.query.url);
+    var urlToScreenshot = 'https://www.google.com';
 
     if (validUrl.isWebUri(urlToScreenshot)) {
         console.log('Screenshotting: ' + urlToScreenshot);
